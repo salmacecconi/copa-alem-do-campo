@@ -8,8 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--verde:#1a4731;--verde-medio:#2d6a4f;--verde-claro:#52b788;--ouro:#c9a84c;--ouro-claro:#f0d080;--creme:#fdf6ec;--branco:#ffffff;--cinza-escuro:#1c1c1c;--cinza-texto:#3a3a3a;--cinza-medio:#6b6b6b;--cinza-linha:#e0d9cf}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--creme);color:var(--cinza-texto);line-height:1.7}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--verde);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:64px;box-shadow:0 2px 12px rgba(0,0,0,.25)}
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ouro-claro);text-decoration:none}
@@ -35,8 +34,6 @@ h3{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:
 p{margin-bottom:1.2rem;font-size:1rem}
 p:last-child{margin-bottom:0}
 .div{width:56px;height:3px;background:var(--ouro);margin:1.2rem 0 2rem;border-radius:2px}
-
-/* QUOTE CARDS */
 .qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-top:2rem}
 .qcard{background:var(--branco);border-radius:12px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.07);transition:transform .2s,box-shadow .2s}
 .qcard:hover{transform:translateY(-3px);box-shadow:0 6px 24px rgba(0,0,0,.12)}
@@ -45,30 +42,22 @@ p:last-child{margin-bottom:0}
 .qcard .flag{font-size:1.5rem;margin-bottom:.4rem;display:block}
 .qcard blockquote{font-family:'Playfair Display',serif;font-size:.9rem;font-style:italic;color:var(--cinza-escuro);line-height:1.6;margin-bottom:.5rem}
 .qcard .cap{font-size:.78rem;color:var(--cinza-medio)}
-
-/* ESTÁDIOS */
 .egrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;margin-top:1.5rem}
 .ecard{border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)}
 .ecard img{width:100%;height:180px;object-fit:cover;display:block}
 .ecard-body{background:var(--branco);padding:1rem 1.2rem}
 .ecard-body h4{font-weight:600;font-size:.9rem;color:var(--verde);margin-bottom:.2rem}
 .ecard-body p{font-size:.8rem;color:var(--cinza-medio);margin-bottom:0}
-
-/* VÍDEOS */
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem;margin-top:1.5rem}
 .vcard{border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.1)}
 .vcard iframe{width:100%;aspect-ratio:16/9;display:block;border:none}
 .vcard p{background:var(--branco);padding:.7rem 1rem;font-size:.8rem;color:var(--cinza-medio);margin-bottom:0}
-
-/* FESTIVAIS */
 .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.4rem;margin-top:1.5rem}
 .fcard{background:var(--branco);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07)}
 .fcard img{width:100%;height:180px;object-fit:cover;display:block}
 .fcard-body{padding:1.1rem 1.3rem}
 .fcard-body h4{font-family:'Playfair Display',serif;font-weight:700;color:var(--verde);font-size:1.05rem;margin-bottom:.3rem}
 .fcard-body p{font-size:.85rem;color:var(--cinza-medio);margin-bottom:0}
-
-/* BLOCO 2 — países */
 #bloco2{background:var(--verde)}
 #bloco2 h2{color:var(--ouro-claro)}
 #bloco2 .ey{color:var(--verde-claro)}
@@ -80,8 +69,6 @@ p:last-child{margin-bottom:0}
 .pcard .flag{font-size:1.6rem;display:block;margin-bottom:.3rem}
 .pcard .name{font-weight:600;font-size:.88rem;color:var(--ouro-claro);display:block;margin-bottom:.2rem}
 .pcard .desc{font-size:.78rem;color:rgba(255,255,255,.65);line-height:1.45}
-
-/* BLOCO 3 */
 #bloco3{background:var(--branco)}
 .grafico{margin:2rem 0;border-radius:12px;overflow:hidden;border:1px solid var(--cinza-linha)}
 .grafico img{width:100%;display:block}
@@ -97,18 +84,14 @@ p:last-child{margin-bottom:0}
 .nmcard-body{padding:.9rem 1.1rem}
 .nmcard-body h4{font-family:'Playfair Display',serif;font-weight:700;color:var(--verde);font-size:.98rem;margin-bottom:.3rem}
 .nmcard-body p{font-size:.83rem;color:var(--cinza-medio);margin-bottom:0}
-
-/* BLOCO 4 */
 #bloco4{background:var(--creme)}
 .b4intro{font-family:'Playfair Display',serif;font-size:1.4rem;font-style:italic;color:var(--verde);border-left:4px solid var(--ouro);padding:1rem 1.5rem;margin-bottom:2rem;line-height:1.5}
-.b4img{width:100%;border-radius:12px;margin:1.8rem 0;object-fit:cover;max-height:400px;display:block;box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.b4img{width:100%;border-radius:12px;margin:1.8rem 0;object-fit:cover;max-height:420px;display:block;box-shadow:0 4px 20px rgba(0,0,0,.1)}
 .capitulo{margin-bottom:2.2rem}
 .ctag{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--verde-claro);margin-bottom:.5rem;display:block}
 .b4quote{padding:1.4rem 2rem;background:var(--verde);border-radius:12px;margin-top:1.5rem}
 .b4quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.05rem;color:var(--ouro-claro);margin-bottom:.4rem}
 .b4quote small{font-size:.78rem;color:rgba(255,255,255,.45)}
-
-/* BLOCO 5 */
 #bloco5{background:var(--branco)}
 .pullquote{border-left:4px solid var(--ouro);padding:1.2rem 1.8rem;margin:2rem 0;background:var(--creme);border-radius:0 10px 10px 0}
 .pullquote p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:var(--cinza-escuro);margin-bottom:0}
@@ -116,8 +99,6 @@ p:last-child{margin-bottom:0}
 .tcard{background:var(--creme);border-radius:10px;padding:1.4rem;border-top:3px solid var(--verde-claro)}
 .tcard .app{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--verde-claro);margin-bottom:.3rem}
 .tcard p{font-size:.86rem;color:var(--cinza-medio);margin-bottom:0}
-
-/* BLOCO 6 */
 #bloco6{background:var(--verde)}
 #bloco6 h2{color:var(--ouro-claro)}
 #bloco6 .ey{color:var(--verde-claro)}
@@ -130,24 +111,14 @@ p:last-child{margin-bottom:0}
 .ctx h3{color:var(--verde-claro);font-size:.95rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.8rem}
 .b6final{margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,.05);border-radius:10px;border:1px solid rgba(255,255,255,.14);text-align:center}
 .b6final p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:var(--ouro-claro);margin-bottom:0}
-
-/* SOBRE */
 #sobre{background:var(--cinza-escuro);padding:5rem 2rem}
 #sobre h2{color:var(--ouro-claro)}
 #sobre .ey{color:var(--verde-claro)}
 #sobre p{color:rgba(255,255,255,.75)}
 .sgrid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem}
 .slabel{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--verde-claro);margin-bottom:.4rem;display:block}
-
 footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3);font-size:.78rem}
-
-@media(max-width:700px){
-  .sgrid{grid-template-columns:1fr}
-  nav{padding:0 1rem}
-  .nav-links{gap:.7rem}
-  .nav-links a{font-size:.65rem}
-  .vgrid{grid-template-columns:1fr}
-}
+@media(max-width:700px){.sgrid{grid-template-columns:1fr}nav{padding:0 1rem}.nav-links{gap:.7rem}.nav-links a{font-size:.65rem}.vgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -165,7 +136,6 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-ball">⚽</div>
   <p class="hero-eyebrow">Reportagem Multimídia · Copa do Mundo 2026</p>
@@ -184,170 +154,105 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
 
     <div class="qgrid">
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1oerZ1yclu4ozy_Wb_nBK5WLGmazBRJv2" alt="Torcida Argentina" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇦🇷</span>
-          <blockquote>"Na Argentina, o futebol não é um esporte, é o idioma da alma. Cada gol ecoa como um poema de Borges: inevitável, eterno."</blockquote>
-          <p class="cap">Da Patagônia a Buenos Aires, as cores azul e branca viram a cor do céu inteiro no dia de jogo.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/bloco%201%20torcida%20argentina.png" alt="Torcida Argentina" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇦🇷</span><blockquote>"Na Argentina, o futebol não é um esporte, é o idioma da alma. Cada gol ecoa como um poema de Borges: inevitável, eterno."</blockquote><p class="cap">Da Patagônia a Buenos Aires, as cores azul e branca viram a cor do céu inteiro no dia de jogo.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1a0RX-kqho_SfV5oCqYeAInesHASt57h2" alt="Torcida México" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇲🇽</span>
-          <blockquote>"Para o México, a Copa é uma festa que começa semanas antes — entre mariachis, tacos e o grito coletivo que sacode montanhas."</blockquote>
-          <p class="cap">O rugido do El Grito no estádio é tão mexicano quanto o chile e o milho: raiz profunda, sabor inconfundível.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/MEXICO.jpg" alt="Torcida México" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇲🇽</span><blockquote>"Para o México, a Copa é uma festa que começa semanas antes — entre mariachis, tacos e o grito coletivo que sacode montanhas."</blockquote><p class="cap">O rugido do El Grito no estádio é tão mexicano quanto o chile e o milho: raiz profunda, sabor inconfundível.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1p8jDkeDMyzk6OZ_4RgIMzJqWmD2GjfaQ" alt="Torcida Croácia" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇭🇷</span>
-          <blockquote>"Um país de apenas quatro milhões que parou o mundo. A camisa xadrez da Croácia virou símbolo de que o coração não tem tamanho."</blockquote>
-          <p class="cap">Da costa dálmata às praças de Zagreb, a torcida croata prova que a paixão não mede território, mede garra.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/TORCIDA-CROACIA.png" alt="Torcida Croácia" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇭🇷</span><blockquote>"Um país de apenas quatro milhões que parou o mundo. A camisa xadrez da Croácia virou símbolo de que o coração não tem tamanho."</blockquote><p class="cap">Da costa dálmata às praças de Zagreb, a torcida croata prova que a paixão não mede território, mede garra.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1HjB1OlrAr-v3R0WET6w-YcVyfRDeHoUe" alt="Torcida Haiti" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇭🇹</span>
-          <blockquote>"O futebol no Haiti é resistência. É a bola rolando onde outras coisas pararam, a alegria que nenhuma adversidade consegue roubar."</blockquote>
-          <p class="cap">Nas ruas de Porto Príncipe ou em São Paulo, o haitiano torcedor carrega no peito a força de quem reinventa o mundo todo dia.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Bloco1OFutebolnoHaiti.png" alt="Torcida Haiti" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇭🇹</span><blockquote>"O futebol no Haiti é resistência. É a bola rolando onde outras coisas pararam, a alegria que nenhuma adversidade consegue roubar."</blockquote><p class="cap">Nas ruas de Porto Príncipe ou em São Paulo, o haitiano torcedor carrega no peito a força de quem reinventa o mundo todo dia.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1f_TxOuGMvtg9c_pnlvs-2YzWjmdCBrtS" alt="Torcida Senegal" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇸🇳</span>
-          <blockquote>"Os Leões de Teranga rugem com ritmo e dança. No Senegal, torcer é um ato coletivo de fé, corpo, música e bola em uníssono."</blockquote>
-          <p class="cap">O sabar ressoa nas arquibancadas como tambor de guerra: o futebol senegalês é África se apresentando ao mundo sem pedir licença.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/TORCIDA-DO-SENEGAL.png" alt="Torcida Senegal" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇸🇳</span><blockquote>"Os Leões de Teranga rugem com ritmo e dança. No Senegal, torcer é um ato coletivo de fé, corpo, música e bola em uníssono."</blockquote><p class="cap">O sabar ressoa nas arquibancadas como tambor de guerra: o futebol senegalês é África se apresentando ao mundo sem pedir licença.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1lFSOYIKjbvBTp0Dhn3AddDTxauKREyK4" alt="Torcida Japão" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇯🇵</span>
-          <blockquote>"O Japão leva ao estádio a mesma precisão e beleza com que faz tudo: torcida organizada, silêncio reverente e explosão certeira na hora certa."</blockquote>
-          <p class="cap">A limpeza das arquibancadas japonesas após cada partida virou símbolo mundial — respeito pelo jogo que vai além da vitória.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Torcida%20Japao.png" alt="Torcida Japão" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇯🇵</span><blockquote>"O Japão leva ao estádio a mesma precisão e beleza com que faz tudo: torcida organizada, silêncio reverente e explosão certeira na hora certa."</blockquote><p class="cap">A limpeza das arquibancadas japonesas após cada partida virou símbolo mundial — respeito pelo jogo que vai além da vitória.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1cSjLh8_sshgVTkVQso8NZbWib-QoGgk0" alt="Torcida Marrocos" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇲🇦</span>
-          <blockquote>"Marrocos não foi só ao campo — foi à história. Pela primeira vez, a África chegou às semifinais e o mundo inteiro parou para ver."</blockquote>
-          <p class="cap">Das medinas de Fez às ruas de Casablanca, as serpentinas verdes e vermelhas provaram que um sonho árabe é tão real quanto qualquer outro.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/MARROCOS.png" alt="Torcida Marrocos" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇲🇦</span><blockquote>"Marrocos não foi só ao campo — foi à história. Pela primeira vez, a África chegou às semifinais e o mundo inteiro parou para ver."</blockquote><p class="cap">Das medinas de Fez às ruas de Casablanca, as serpentinas verdes e vermelhas provaram que um sonho árabe é tão real quanto qualquer outro.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1MinmExFVd-kyeb8NATb45iGUvfddgshK" alt="Torcida Brasil" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇧🇷</span>
-          <blockquote>"No Brasil, a Copa não para o país, ela é o país. O verde e amarelo que flutua nas janelas é a maior manifestação coletiva de identidade que existe."</blockquote>
-          <p class="cap">Para o imigrante que deixou sua terra, torcer pelo Brasil é uma forma de pertencer — uma nova bandeira que o abraça sem fronteiras.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/BRASIL.jpg" alt="Torcida Brasil" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇧🇷</span><blockquote>"No Brasil, a Copa não para o país, ela é o país. O verde e amarelo que flutua nas janelas é a maior manifestação coletiva de identidade que existe."</blockquote><p class="cap">Para o imigrante que deixou sua terra, torcer pelo Brasil é uma forma de pertencer — uma nova bandeira que o abraça sem fronteiras.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1c17Tqf4pKpmonzgkNyy994yo_Z6e9Afy" alt="Torcida Coreia do Sul" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇰🇷</span>
-          <blockquote>"O exército vermelho da Coreia transformou a Copa de 2002 em lenda. Milhões nas ruas, um povo inteiro vestido de fé e de vermelho intenso."</blockquote>
-          <p class="cap">A Coreia do Sul mostrou que futebol pode ser revolução cultural — uma nação que se redescobre enquanto torce.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/CoreiaDoSUL.png" alt="Torcida Coreia do Sul" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇰🇷</span><blockquote>"O exército vermelho da Coreia transformou a Copa de 2002 em lenda. Milhões nas ruas, um povo inteiro vestido de fé e de vermelho intenso."</blockquote><p class="cap">A Coreia do Sul mostrou que futebol pode ser revolução cultural — uma nação que se redescobre enquanto torce.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1ILTmgwoVTeAWcNz0BgnzSGlA-8TUtzIR" alt="Torcida Gana" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇬🇭</span>
-          <blockquote>"As Estrelas Negras de Gana carregam a esperança de um continente. Cada drible é uma história de força; cada gol, uma mensagem ao mundo."</blockquote>
-          <p class="cap">O ritmo do highlife toca nas arquibancadas e o futebol ganense vira poesia em movimento — África que não pede para entrar, ela simplesmente chega.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/GANA.jpg" alt="Torcida Gana" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇬🇭</span><blockquote>"As Estrelas Negras de Gana carregam a esperança de um continente. Cada drible é uma história de força; cada gol, uma mensagem ao mundo."</blockquote><p class="cap">O ritmo do highlife toca nas arquibancadas e o futebol ganense vira poesia em movimento — África que não pede para entrar, ela simplesmente chega.</p></div>
       </div>
       <div class="qcard">
-        <img src="https://drive.google.com/uc?export=view&id=1egVAe4yjRFmBV9ivliu-kw7YM5t0Mza3" alt="Torcida Portugal" loading="lazy">
-        <div class="qcard-body">
-          <span class="flag">🇵🇹</span>
-          <blockquote>"Portugal joga com a saudade no peito e o fado na alma. A bola corre pelos campos como os navios que um dia partiram — com destino ao mundo."</blockquote>
-          <p class="cap">Para a diáspora portuguesa espalhada pelo globo, a Copa é o reencontro com uma pátria que nunca coube em fronteiras fixas.</p>
-        </div>
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/PORTUGAL.png" alt="Torcida Portugal" loading="lazy">
+        <div class="qcard-body"><span class="flag">🇵🇹</span><blockquote>"Portugal joga com a saudade no peito e o fado na alma. A bola corre pelos campos como os navios que um dia partiram — com destino ao mundo."</blockquote><p class="cap">Para a diáspora portuguesa espalhada pelo globo, a Copa é o reencontro com uma pátria que nunca coube em fronteiras fixas.</p></div>
       </div>
     </div>
 
-    <!-- Estádios -->
     <h3 style="margin-top:3.5rem">Estádios do mundo</h3>
     <div class="div"></div>
     <div class="egrid">
       <div class="ecard">
-        <img src="https://drive.google.com/uc?export=view&id=1hIJ56-bvueOS_2TXGJbeh8nEKBaHExXV" alt="Estádio Ellis Park" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Est%C3%A1dio%20Ellis%20Park.png" alt="Estádio Ellis Park" loading="lazy">
         <div class="ecard-body"><h4>Estádio Ellis Park</h4><p>Joanesburgo, África do Sul</p></div>
       </div>
       <div class="ecard">
-        <img src="https://drive.google.com/uc?export=view&id=1FjbjviGiwcFZEj0JNSbt6WqcG06GF2WL" alt="Estádio Mario Alberto Kempes" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Est%C3%A1dio%20Mario%20Alberto%20Kempes.png" alt="Estádio Mario Alberto Kempes" loading="lazy">
         <div class="ecard-body"><h4>Estádio Mario Alberto Kempes</h4><p>Córdoba, Argentina</p></div>
       </div>
       <div class="ecard">
-        <img src="https://drive.google.com/uc?export=view&id=1zqDZmigXqFUP_roIIYsv7X-00it6efuI" alt="Estádio Internacional de Yokohama" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Est%C3%A1dio%20Internacional%20de%20Yokohama.png" alt="Estádio Internacional de Yokohama" loading="lazy">
         <div class="ecard-body"><h4>Estádio Internacional de Yokohama</h4><p>Yokohama, Japão</p></div>
       </div>
       <div class="ecard">
-        <img src="https://drive.google.com/uc?export=view&id=1mp8Iw-M-5WfcxdAK9E7s19xanVONEew0" alt="Estádio Sylvio Cator" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Est%C3%A1dio%20Sylvio%20Cator.png" alt="Estádio Sylvio Cator" loading="lazy">
         <div class="ecard-body"><h4>Estádio Sylvio Cator</h4><p>Porto Príncipe, Haiti</p></div>
       </div>
       <div class="ecard">
-        <img src="https://drive.google.com/uc?export=view&id=1-_Hz1xQp7W7V2Pk_qher-S-C_3lU0FXL" alt="Estádio Olímpico Atahualpa" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Est%C3%A1dio%20Ol%C3%ADmpico%20Atahualpa.png" alt="Estádio Olímpico Atahualpa" loading="lazy">
         <div class="ecard-body"><h4>Estádio Olímpico Atahualpa</h4><p>Quito, Equador</p></div>
       </div>
     </div>
 
-    <!-- Vídeos torcidas -->
     <h3 style="margin-top:3.5rem">Torcidas ao redor do mundo</h3>
     <div class="div"></div>
     <div class="vgrid">
-      <div class="vcard">
-        <iframe src="https://www.youtube.com/embed/bBmVVQnocjc" title="Torcida" loading="lazy" allowfullscreen></iframe>
-        <p>Torcida celebra em Buenos Aires após vitória da Argentina</p>
-      </div>
-      <div class="vcard">
-        <iframe src="https://www.youtube.com/embed/Ba_CVyn7eiw" title="Torcida" loading="lazy" allowfullscreen></iframe>
-        <p>Torcedores do México fazem festa antes da estreia</p>
-      </div>
-      <div class="vcard">
-        <iframe src="https://www.youtube.com/embed/EgHVzCjkOsU" title="Senegal" loading="lazy" allowfullscreen></iframe>
-        <p>Torcedores do Senegal celebram vitória na Copa do Mundo</p>
-      </div>
-      <div class="vcard">
-        <iframe src="https://www.youtube.com/embed/O22C8BeSf44" title="Torcida" loading="lazy" allowfullscreen></iframe>
-        <p>A energia das torcidas ao redor do mundo</p>
-      </div>
-      <div class="vcard">
-        <iframe src="https://www.youtube.com/embed/l3C9ue8yFsY" title="Torcida" loading="lazy" allowfullscreen></iframe>
-        <p>Celebrações de torcidas internacionais</p>
-      </div>
-      <div class="vcard">
-        <iframe src="https://www.youtube.com/embed/WW7j4Kuh7PE" title="Haiti" loading="lazy" allowfullscreen></iframe>
-        <p>Haitianos comemoram nas ruas a vitória do Brasil na Copa de 2018</p>
-      </div>
+      <div class="vcard"><iframe src="https://www.youtube.com/embed/bBmVVQnocjc" title="Torcida" loading="lazy" allowfullscreen></iframe><p>Torcida celebra em Buenos Aires após vitória da Argentina</p></div>
+      <div class="vcard"><iframe src="https://www.youtube.com/embed/Ba_CVyn7eiw" title="Torcida" loading="lazy" allowfullscreen></iframe><p>Torcedores do México fazem festa antes da estreia</p></div>
+      <div class="vcard"><iframe src="https://www.youtube.com/embed/EgHVzCjkOsU" title="Senegal" loading="lazy" allowfullscreen></iframe><p>Torcedores do Senegal celebram vitória na Copa do Mundo</p></div>
+      <div class="vcard"><iframe src="https://www.youtube.com/embed/O22C8BeSf44" title="Torcida" loading="lazy" allowfullscreen></iframe><p>A energia das torcidas ao redor do mundo</p></div>
+      <div class="vcard"><iframe src="https://www.youtube.com/embed/l3C9ue8yFsY" title="Torcida" loading="lazy" allowfullscreen></iframe><p>Celebrações de torcidas internacionais</p></div>
+      <div class="vcard"><iframe src="https://www.youtube.com/embed/WW7j4Kuh7PE" title="Haiti" loading="lazy" allowfullscreen></iframe><p>Haitianos comemoram nas ruas a vitória do Brasil na Copa de 2018</p></div>
     </div>
 
-    <!-- Cultura -->
     <h3 style="margin-top:3.5rem">Cultura que acompanha a torcida</h3>
     <div class="div"></div>
     <p>Mas a paixão pelo futebol não é a única herança que atravessa fronteiras. Junto com as bandeiras, os cantos e as camisas das seleções, imigrantes também carregam tradições que ajudam a manter viva a conexão com seus países de origem.</p>
     <div class="fgrid">
       <div class="fcard">
-        <img src="https://drive.google.com/uc?export=view&id=1CxAqYsh-3Ynxnmb4dYIE_yYmElp2fMc2" alt="Matsuri" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/IMG_1509.WEBP" alt="Matsuri" loading="lazy">
         <div class="fcard-body"><h4>🎏 Matsuri</h4><p>No Japão, antes de torcer, se celebra. O Matsuri para o tempo, enche as ruas de lanternas e lembra que pertencer a um povo é também dançar com ele.</p></div>
       </div>
       <div class="fcard">
-        <img src="https://drive.google.com/uc?export=view&id=1jA4w60ksV6rXPpqAw9fmpc6U_532gT_m" alt="Sabar" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/SENEGAAL.png" alt="Sabar" loading="lazy">
         <div class="fcard-body"><h4>🥁 Sabar</h4><p>No Senegal, o tambor fala antes da bola rolar. O Sabar não é só festa: é a língua que o povo Wolof usa para dizer que está vivo, junto e de pé.</p></div>
       </div>
       <div class="fcard">
-        <img src="https://drive.google.com/uc?export=view&id=1nR5w3wDjveRV_j5XW_ykddLC6FkjeqOG" alt="Día de los Muertos" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/dia%20dos%20mortos%20.png" alt="Día de los Muertos" loading="lazy">
         <div class="fcard-body"><h4>🌸 Día de los Muertos</h4><p>No México, a saudade ganha cor. Entre flores de cempasúchil, velas e altares, os mexicanos homenageiam seus ancestrais e reafirmam suas raízes.</p></div>
       </div>
       <div class="fcard">
-        <img src="https://drive.google.com/uc?export=view&id=1IWFzUwUZIDrrSO2F5Hv4lVngSLslq5uK" alt="Kanaval" loading="lazy">
+        <img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/kanaval.webp" alt="Kanaval" loading="lazy">
         <div class="fcard-body"><h4>🎶 Kanaval</h4><p>No Haiti, a festa resiste. O Kanaval transforma as ruas em um mar de música, dança e cores, lembrando que a alegria também é uma forma de força.</p></div>
       </div>
     </div>
@@ -362,53 +267,17 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
     <div class="div"></div>
     <p>De arquibancadas ao redor do mundo a bares em São Paulo, cada comunidade carrega consigo uma forma única de celebrar o maior evento esportivo do planeta.</p>
     <div class="pgrid">
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=1uHQgoKB48riA7bNElOqxZp2zBM4c7Nd5" alt="Argentina" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇦🇷</span><span class="name">Argentina</span><p class="desc">Cânticos, bandeiras e paixão que paralisa cidades inteiras</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=1FfQyvws2Ge2uqGmoLYv2Wy7T3QEVrwsb" alt="México" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇲🇽</span><span class="name">México</span><p class="desc">Festa que começa semanas antes com mariachis e El Grito</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=11MfdoV9GjWeU_AJOlJpMdC-WZGklUxKw" alt="Croácia" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇭🇷</span><span class="name">Croácia</span><p class="desc">Torcedores que cantam sem parar e batem palmas ritmadas, com xadrez vermelho e branco em todo lugar</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=12K-FJ8jAwioJkXTfRGLn48S0L32SA4YB" alt="Haiti" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇭🇹</span><span class="name">Haiti</span><p class="desc">Fanatismo extremo e festas vibrantes com música caribenha e jantares típicos</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=1i4WBF5GaIWJX3eK3OPbAi8pzSayOzrno" alt="Senegal" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇸🇳</span><span class="name">Senegal</span><p class="desc">Tambores sabar, dança e fé coletiva nos Leões de Teranga</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=11QjR3jDpjYF8WVTXM_WjmzVKWvL30ukM" alt="Japão" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇯🇵</span><span class="name">Japão</span><p class="desc">Torcida organizada, silêncio reverente e arquibancadas impecavelmente limpas após cada jogo</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=1F13Q2XwCrt-MO72rYaYdzeZg8wRyFf-t" alt="Marrocos" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇲🇦</span><span class="name">Marrocos</span><p class="desc">Uma das torcidas mais apaixonadas, barulhentas e organizadas do mundo</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=1mHq1siiDrqeqSoeIhuZUYrigO-io2A7x" alt="Coreia do Sul" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇰🇷</span><span class="name">Coreia do Sul</span><p class="desc">Os "Diabos Vermelhos": organização, ritmo e forte união comunitária</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=14kTd0zseHfPw9UQCxPz0ayQxBYWAIxxY" alt="Gana" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇬🇭</span><span class="name">Gana</span><p class="desc">Coreografias animadas, baterias e cores vibrantes — vermelho, amarelo e verde</p></div>
-      </div>
-      <div class="pcard">
-        <img src="https://drive.google.com/uc?export=view&id=1S74K6ZEpbYar8rVYj3G36JtpJ93h187S" alt="Portugal" loading="lazy">
-        <div class="pcard-body"><span class="flag">🇵🇹</span><span class="name">Portugal</span><p class="desc">Otimismo, cânticos tradicionais e uso de cachecóis, bandeiras e vestimentas locais</p></div>
-      </div>
-      <div class="pcard" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;min-height:240px">
-        <div style="text-align:center;padding:1.5rem">
-          <span style="font-size:3rem;display:block;margin-bottom:.5rem">🇧🇷</span>
-          <span class="name" style="color:var(--ouro-claro);display:block;margin-bottom:.3rem">Brasil</span>
-          <p class="desc" style="font-size:.82rem">País que não para — a Copa é o próprio país</p>
-        </div>
-      </div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/ARGENTINA.jpg" alt="Argentina" loading="lazy"><div class="pcard-body"><span class="flag">🇦🇷</span><span class="name">Argentina</span><p class="desc">Cânticos, bandeiras e paixão que paralisa cidades inteiras</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/TORCIDA-MEXICO.jpg" alt="México" loading="lazy"><div class="pcard-body"><span class="flag">🇲🇽</span><span class="name">México</span><p class="desc">Festa que começa semanas antes com mariachis e El Grito</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/TORCIDA-CROACIA.png" alt="Croácia" loading="lazy"><div class="pcard-body"><span class="flag">🇭🇷</span><span class="name">Croácia</span><p class="desc">Torcedores que cantam sem parar e batem palmas ritmadas, com xadrez vermelho e branco em todo lugar</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/HAITII.png" alt="Haiti" loading="lazy"><div class="pcard-body"><span class="flag">🇭🇹</span><span class="name">Haiti</span><p class="desc">Fanatismo extremo e festas vibrantes com música caribenha e jantares típicos</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/SENEGAL-BRASIL.png" alt="Senegal" loading="lazy"><div class="pcard-body"><span class="flag">🇸🇳</span><span class="name">Senegal</span><p class="desc">Tambores sabar, dança e fé coletiva nos Leões de Teranga</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/JAPAO.jpg" alt="Japão" loading="lazy"><div class="pcard-body"><span class="flag">🇯🇵</span><span class="name">Japão</span><p class="desc">Torcida organizada, silêncio reverente e arquibancadas impecavelmente limpas após cada jogo</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Marrocos.png" alt="Marrocos" loading="lazy"><div class="pcard-body"><span class="flag">🇲🇦</span><span class="name">Marrocos</span><p class="desc">Uma das torcidas mais apaixonadas, barulhentas e organizadas do mundo</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/TORCIDA-COREIA-DO-SUL.png" alt="Coreia do Sul" loading="lazy"><div class="pcard-body"><span class="flag">🇰🇷</span><span class="name">Coreia do Sul</span><p class="desc">Os "Diabos Vermelhos": organização, ritmo e forte união comunitária</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/GANAA.png" alt="Gana" loading="lazy"><div class="pcard-body"><span class="flag">🇬🇭</span><span class="name">Gana</span><p class="desc">Coreografias animadas, baterias e cores vibrantes — vermelho, amarelo e verde</p></div></div>
+      <div class="pcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/PORTUGAL.png" alt="Portugal" loading="lazy"><div class="pcard-body"><span class="flag">🇵🇹</span><span class="name">Portugal</span><p class="desc">Otimismo, cânticos tradicionais e uso de cachecóis, bandeiras e vestimentas locais</p></div></div>
+      <div class="pcard" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;min-height:240px"><div style="text-align:center;padding:1.5rem"><span style="font-size:3rem;display:block;margin-bottom:.5rem">🇧🇷</span><span class="name" style="color:var(--ouro-claro);display:block;margin-bottom:.3rem">Brasil</span><p class="desc">País que não para — a Copa é o próprio país</p></div></div>
     </div>
   </div>
 </section>
@@ -422,11 +291,7 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
     <p>Você já imaginou assistir à Copa do Mundo a milhares de quilômetros de casa? Para milhares de imigrantes que vivem no Brasil, essa não é uma imaginação, mas uma realidade.</p>
     <p>Quando a bola começa a rolar na Copa do Mundo, a distância entre países parece diminuir. Para milhares de imigrantes que vivem no Brasil, o torneio representa mais do que futebol: é uma oportunidade de reencontrar suas raízes, manter tradições e fortalecer os laços com familiares que ficaram do outro lado do mundo.</p>
     <p>O Brasil registrou cerca de 1 milhão de estrangeiros e brasileiros naturalizados no Censo demográfico do IBGE em 2022, com destaque para venezuelanos, portugueses, bolivianos, paraguaios, haitianos e argentinos.</p>
-
-    <div class="grafico">
-      <img src="https://drive.google.com/uc?export=view&id=1oUsQ2f9162n28f23TQzqaLz8vhD4rvTP" alt="Gráfico de imigrantes no Brasil" loading="lazy">
-    </div>
-
+    <div class="grafico"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/GRAFICO.PNG" alt="Gráfico de imigrantes no Brasil" loading="lazy"></div>
     <p>Nos últimos anos, os fluxos migratórios transformaram o país em um espaço de convivência entre diferentes culturas e formas de viver o futebol. Em conjunto, essas comunidades representam uma parcela importante dos imigrantes que vivem e acompanham a Copa do Mundo em território brasileiro.</p>
 
     <h3 style="margin-top:3rem">O caminho da torcida longe de casa</h3>
@@ -442,27 +307,12 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
 
     <h3 style="margin-top:3rem">O que não muda durante a Copa?</h3>
     <div class="nmgrid">
-      <div class="nmcard">
-        <img src="https://drive.google.com/uc?export=view&id=1B_tUrFmeJAOwQ46o6fxt3YU-Ky9haX0q" alt="Comida" loading="lazy">
-        <div class="nmcard-body"><h4>Comida</h4><p>Guacamole, tabule, tassot, tequeños e tortilla paraguaia — os pratos típicos se tornam protagonistas no dia de jogo.</p></div>
-      </div>
-      <div class="nmcard">
-        <img src="https://drive.google.com/uc?export=view&id=1D2MmOYpLd7JLWdmReOw1kFxEAvtRLc2L" alt="Música" loading="lazy">
-        <div class="nmcard-body"><h4>Música</h4><p>Canções tradicionais e músicas de torcida que fazem parte da identidade nacional. Ouvir na própria língua tem um valor que vai além da comunicação.</p></div>
-      </div>
-      <div class="nmcard">
-        <img src="https://drive.google.com/uc?export=view&id=1shbL9pBXxekRaXQhiPRKl94Y74ZY0RsY" alt="Cores da seleção" loading="lazy">
-        <div class="nmcard-body"><h4>Cores da seleção</h4><p>Camisas, bandeiras e acessórios que transformam casas, bares e praças. Símbolos nacionais que ganham força em momentos de celebração coletiva.</p></div>
-      </div>
-      <div class="nmcard">
-        <img src="https://drive.google.com/uc?export=view&id=1GJRU0Kwtv3cm-9qS_mfOshbshBS4TYrc" alt="Comunidade" loading="lazy">
-        <div class="nmcard-body"><h4>Comunidade</h4><p>Encontros entre amigos e familiares para viver cada jogo coletivamente. A torcida como espaço de memória e pertencimento compartilhado.</p></div>
-      </div>
+      <div class="nmcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/CULINARIA.JPG" alt="Comida" loading="lazy"><div class="nmcard-body"><h4>Comida</h4><p>Guacamole, tabule, tassot, tequeños e tortilla paraguaia — os pratos típicos se tornam protagonistas no dia de jogo.</p></div></div>
+      <div class="nmcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/MUSICA.JPG" alt="Música" loading="lazy"><div class="nmcard-body"><h4>Música</h4><p>Canções tradicionais e músicas de torcida que fazem parte da identidade nacional. Ouvir na própria língua tem um valor que vai além da comunicação.</p></div></div>
+      <div class="nmcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/TORCIDA-COREIA-DO-SUL.png" alt="Cores da seleção" loading="lazy"><div class="nmcard-body"><h4>Cores da seleção</h4><p>Camisas, bandeiras e acessórios que transformam casas, bares e praças. Símbolos nacionais que ganham força em momentos de celebração coletiva.</p></div></div>
+      <div class="nmcard"><img src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/HAITI.png" alt="Comunidade" loading="lazy"><div class="nmcard-body"><h4>Comunidade</h4><p>Encontros entre amigos e familiares para viver cada jogo coletivamente. A torcida como espaço de memória e pertencimento compartilhado.</p></div></div>
     </div>
-
-    <div style="margin-top:2.5rem;padding:1.4rem 1.8rem;background:var(--creme);border-radius:10px;border:1px solid var(--cinza-linha)">
-      <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:var(--cinza-escuro);margin-bottom:0">"Em conjunto, essas comunidades representam uma parcela importante dos imigrantes que vivem e acompanham a Copa do Mundo em território brasileiro."</p>
-    </div>
+    <div style="margin-top:2.5rem;padding:1.4rem 1.8rem;background:var(--creme);border-radius:10px;border:1px solid var(--cinza-linha)"><p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:var(--cinza-escuro);margin-bottom:0">"Em conjunto, essas comunidades representam uma parcela importante dos imigrantes que vivem e acompanham a Copa do Mundo em território brasileiro."</p></div>
   </div>
 </section>
 
@@ -474,47 +324,15 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
     <div class="div"></div>
     <p class="b4intro">Entre dois corações: a experiência de Modu Cará, um senegalês torcendo pela Copa no Brasil</p>
     <p>A Copa do Mundo de 2026 traz uma expectativa única para quem vive o futebol como uma ponte entre culturas. Para Modu Cará, senegalês que reside no Brasil há 12 anos, o torneio é o momento de equilibrar o orgulho por suas raízes africanas com o carinho pela nação que o acolheu.</p>
-
-    <img class="b4img" src="https://drive.google.com/uc?export=view&id=10GG-tBxztji836_ve_fk21wfslN_VWsR" alt="Modu Cará" loading="lazy">
-
-    <div class="capitulo">
-      <span class="ctag">A trajetória de um apaixonado pelo futebol</span>
-      <p>Modu conta que sua paixão pelo esporte começou na infância, no Senegal, e se consolidou ao acompanhar seleções brasileiras históricas. "Comecei a gostar de futebol a partir da Copa do Mundo, né? Lembrando também quando o Brasil foi campeão, então isso eu acho que deve ser há umas décadas. Acho que tinha um Rivaldo nessa seleção", relembra.</p>
-      <p>Sobre sua vinda ao Brasil, ele vê a permanência de mais de uma década como um sinal de integração e afeto: "Estou gostando, porque 12 anos... quem está 12 anos aqui, porque gosta, né?"</p>
-    </div>
-
-    <div class="capitulo">
-      <span class="ctag">O valor do Fair Play</span>
-      <p>Para Modu, o que não pode faltar na Copa é a esportividade. "Eu acho que a alegria é o que não pode faltar. Aquele fair play, a gente chama, né? Levar esse negócio como esportividade mesmo", destaca.</p>
-      <p>Ele ainda alimenta um sonho para o futebol africano em 2026: "Acredito que se a FIFA coloca as coisas sérias, quem sabe um africano, uma seleção africana, leva essa Copa dessa vez pra África".</p>
-    </div>
-
-    <div class="capitulo">
-      <span class="ctag">Um coração dividido entre duas nações</span>
-      <p>Viver a Copa longe de casa desde 2002 fez com que Modu adotasse o Brasil como seu segundo time. "Como eu estou aqui no Brasil, eu tenho dois times pra torcer: Brasil e Senegal. Então eu estou em casa mesmo", explica.</p>
-      <p>A estratégia para torcer é simples: "Como eu não gosto de perder, então sempre tento: se meu time do Senegal perde, tento acompanhar o Brasil até pegar a Copa mesmo. Tanto faz. Se o Senegal ganha, o Brasil ganha".</p>
-      <p>Se o destino colocar as duas seleções frente a frente em uma final, a escolha é clara, embora carregada de afeto: "Eu sou de naturalidade senegalesa, mas tenho uma filha brasileira. Então vou acabando escondendo onde eu estou torcendo. Mas, se for Senegal e Brasil, eu estou torcendo pra que o Senegal leve a Copa mesmo".</p>
-    </div>
-
-    <img class="b4img" src="https://drive.google.com/uc?export=view&id=1msAcwrBEiygOKnMXtYl-9a6OBRnQJ170" alt="Comunidade senegalesa" loading="lazy">
-
-    <div class="capitulo">
-      <span class="ctag">O calor humano da torcida</span>
-      <p>Mesmo distante de sua terra natal, Modu não se sente desamparado. Segundo ele, acompanhar os jogos em grupo ajuda a manter viva uma sensação de pertencimento: "Faço isso para sentir essa energia, esse calor humano", conta.</p>
-      <p>Ele revela que a comunidade senegalesa em São Paulo se reúne para manter viva a energia da torcida: "No centro de São Paulo, a gente tem um espaço pra assistir aos jogos. Encontramos um espaço só pra torcer. Mesmo estando longe dos campos de futebol ou também longe das nossas terras, a gente pode torcer onde estamos nos encontrando no dia a dia".</p>
-    </div>
-
-    <div class="capitulo">
-      <span class="ctag">Expectativas para 2026</span>
-      <p>Quando fala sobre a próxima Copa do Mundo, Modu demonstra entusiasmo e esperança: "Estou torcendo para que os times europeus saiam nos primeiros turnos, e que América Latina e África disputem essa Copa. E também estou torcendo para que o meu time, o Senegal, vá até a final."</p>
-    </div>
-
-    <div class="b4quote">
-      <p>"Eu quero a Copa, então estou levando essa energia positiva sempre comigo esse ano."</p>
-      <small>— Modu Cará, imigrante senegalês em São Paulo</small>
-    </div>
-
-    <p style="margin-top:2rem">A história de Modu mostra como a Copa do Mundo vai além dos resultados dentro de campo. Para quem vive longe do país de origem, o torneio também representa memória, identidade e conexão com as próprias raízes. Entre o Senegal e o Brasil, Modu carrega dois sentimentos de pertencimento que se encontram a cada partida, provando que a paixão pelo futebol pode atravessar fronteiras sem apagar as origens.</p>
+    <img class="b4img" src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/Senegales%20bloco%204.png" alt="Modu Cará" loading="lazy">
+    <div class="capitulo"><span class="ctag">A trajetória de um apaixonado pelo futebol</span><p>Modu conta que sua paixão pelo esporte começou na infância, no Senegal, e se consolidou ao acompanhar seleções brasileiras históricas. "Comecei a gostar de futebol a partir da Copa do Mundo, né? Lembrando também quando o Brasil foi campeão, então isso eu acho que deve ser há umas décadas. Acho que tinha um Rivaldo nessa seleção", relembra.</p><p>Sobre sua vinda ao Brasil, ele vê a permanência de mais de uma década como um sinal de integração e afeto: "Estou gostando, porque 12 anos... quem está 12 anos aqui, porque gosta, né?"</p></div>
+    <div class="capitulo"><span class="ctag">O valor do Fair Play</span><p>Para Modu, o que não pode faltar na Copa é a esportividade. "Eu acho que a alegria é o que não pode faltar. Aquele fair play, a gente chama, né? Levar esse negócio como esportividade mesmo", destaca.</p><p>Ele ainda alimenta um sonho para o futebol africano em 2026: "Acredito que se a FIFA coloca as coisas sérias, quem sabe um africano, uma seleção africana, leva essa Copa dessa vez pra África".</p></div>
+    <div class="capitulo"><span class="ctag">Um coração dividido entre duas nações</span><p>Viver a Copa longe de casa desde 2002 fez com que Modu adotasse o Brasil como seu segundo time. "Como eu estou aqui no Brasil, eu tenho dois times pra torcer: Brasil e Senegal. Então eu estou em casa mesmo", explica.</p><p>A estratégia para torcer é simples: "Como eu não gosto de perder, então sempre tento: se meu time do Senegal perde, tento acompanhar o Brasil até pegar a Copa mesmo. Tanto faz. Se o Senegal ganha, o Brasil ganha".</p><p>Se o destino colocar as duas seleções frente a frente em uma final, a escolha é clara, embora carregada de afeto: "Eu sou de naturalidade senegalesa, mas tenho uma filha brasileira. Então vou acabando escondendo onde eu estou torcendo. Mas, se for Senegal e Brasil, eu estou torcendo pra que o Senegal leve a Copa mesmo".</p></div>
+    <img class="b4img" src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/SENEGAL-BRASIL.png" alt="Comunidade senegalesa" loading="lazy">
+    <div class="capitulo"><span class="ctag">O calor humano da torcida</span><p>Mesmo distante de sua terra natal, Modu não se sente desamparado. "Faço isso para sentir essa energia, esse calor humano", conta. Ele revela que a comunidade senegalesa em São Paulo se reúne para manter viva a energia da torcida: "No centro de São Paulo, a gente tem um espaço pra assistir aos jogos. Encontramos um espaço só pra torcer. Mesmo estando longe dos campos de futebol ou também longe das nossas terras, a gente pode torcer onde estamos nos encontrando no dia a dia".</p></div>
+    <div class="capitulo"><span class="ctag">Expectativas para 2026</span><p>Quando fala sobre a próxima Copa do Mundo, Modu demonstra entusiasmo e esperança: "Estou torcendo para que os times europeus saiam nos primeiros turnos, e que América Latina e África disputem essa Copa. E também estou torcendo para que o meu time, o Senegal, vá até a final."</p></div>
+    <div class="b4quote"><p>"Eu quero a Copa, então estou levando essa energia positiva sempre comigo esse ano."</p><small>— Modu Cará, imigrante senegalês em São Paulo</small></div>
+    <p style="margin-top:2rem">A história de Modu mostra como a Copa do Mundo vai além dos resultados dentro de campo. Para quem vive longe do país de origem, o torneio também representa memória, identidade e conexão com as próprias raízes.</p>
   </div>
 </section>
 
@@ -524,9 +342,7 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
     <span class="ey">Bloco 5</span>
     <h2>Conectados pelo futebol</h2>
     <div class="div"></div>
-    <div class="pullquote">
-      <p>"A distância física mudou, mas a tecnologia permite que muitos vivam a Copa ao lado de quem ficou no país de origem."</p>
-    </div>
+    <div class="pullquote"><p>"A distância física mudou, mas a tecnologia permite que muitos vivam a Copa ao lado de quem ficou no país de origem."</p></div>
     <p>A distância sempre foi um dos maiores desafios para quem deixa seu país de origem. E quando falamos em distância, estamos falando de muitas delas ao mesmo tempo: a da família, dos amigos, dos parceiros, dos filhos, da cultura, das comidas, dos lugares que marcaram a infância e até da própria casa.</p>
     <p>Em momentos marcantes, como a Copa do Mundo, essa saudade se torna ainda mais evidente. Mas se a distância continua existindo, a forma como convivemos com ela mudou profundamente. A evolução da tecnologia transformou nossa relação com o mundo e tornou possível diminuir, mesmo que parcialmente, essas muitas distâncias.</p>
     <p>Voltando um pouco no tempo, percebemos o quanto essa transformação foi significativa. Durante muitos anos, a comunicação entre países era limitada. Primeiro vieram as cartas, depois o fax e as ligações internacionais. Com o avanço da internet chegaram os e-mails, as mensagens instantâneas e, mais tarde, as chamadas de vídeo. Cada nova tecnologia ajudou a derrubar uma barreira que antes parecia impossível de superar.</p>
@@ -537,8 +353,7 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
       <div class="tcard"><p class="app">Transmissões ao vivo</p><p>Hoje um argentino no Brasil pode assistir a uma transmissão argentina, ouvir comentaristas do seu país e ao mesmo tempo conversar com a família por WhatsApp.</p></div>
       <div class="tcard"><p class="app">Comunidades online</p><p>Grupos de WhatsApp, Facebook, Telegram e comunidades online ajudam imigrantes a descobrir bares e espaços culturais frequentados por pessoas da mesma nacionalidade.</p></div>
     </div>
-    <p style="margin-top:2rem">As associações de imigrantes também utilizam as redes sociais para organizar eventos, divulgar encontros e fortalecer os laços entre pessoas que vivem longe de suas origens. Mais do que conectar indivíduos, a tecnologia ajuda a conectar comunidades inteiras.</p>
-    <p>Para quem vive longe do seu país de origem, ela representa a possibilidade de carregar consigo, todos os dias, um pedacinho de casa.</p>
+    <p style="margin-top:2rem">As associações de imigrantes também utilizam as redes sociais para organizar eventos, divulgar encontros e fortalecer os laços entre pessoas que vivem longe de suas origens. Para quem vive longe do seu país de origem, a tecnologia representa a possibilidade de carregar consigo, todos os dias, um pedacinho de casa.</p>
   </div>
 </section>
 
@@ -550,27 +365,17 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
     <div class="div"></div>
     <p>Para muitos imigrantes, a Copa do Mundo não se resume ao resultado dentro de campo. O torneio também pode representar identidade, memória e pertencimento. Para quem vive longe do país onde nasceu, torcer pela seleção nacional é uma forma de manter viva a ligação com a própria história.</p>
     <p>Durante o Mundial, objetos simples passam a ter grande valor simbólico. A camisa da seleção, a bandeira, as cores verde, amarelo e vermelho e os gestos de comemoração ajudam a transformar a saudade em presença. Para quem está longe, torcer também é uma forma de afirmar: a origem continua viva.</p>
-
-    <div class="b6video">
-      <iframe src="https://www.youtube.com/embed/8U-PQlXKzxA" title="Imigrante senegalês sobre a Copa do Mundo" allowfullscreen></iframe>
-    </div>
-
+    <div class="b6video"><iframe src="https://www.youtube.com/embed/8U-PQlXKzxA" title="Imigrante senegalês sobre a Copa do Mundo" allowfullscreen></iframe></div>
     <p>A torcida, nesse contexto, não é apenas manifestação esportiva. Ela também é memória. É uma forma de lembrar da família, da infância, dos amigos e dos lugares que fizeram parte da vida antes da imigração. Cada jogo pode trazer de volta sons, imagens e sentimentos que continuam presentes, mesmo à distância.</p>
-
-    <img class="b6img" src="https://drive.google.com/uc?export=view&id=1NxxKkLt9gUVa1P-Yip9yPxyrMZVEtOxL" alt="Imigrantes assistindo a Copa" loading="lazy">
-
+    <img class="b6img" src="https://raw.githubusercontent.com/salmacecconi/copa-alem-do-campo/main/bloco%206%20fifa-fest-1%20%281%29.jpg" alt="FIFA Fest" loading="lazy">
     <p>A Copa mostra que algumas tradições não desaparecem quando alguém cruza fronteiras. Elas se adaptam, mudam de lugar e encontram novas formas de continuar existindo. Para quem está longe de casa, a seleção pode representar mais do que um time: pode representar um pedaço da própria história.</p>
-
     <div class="ctx">
       <h3>🦁 Contexto: Senegal no Brasil e no mundo</h3>
       <p>O Brasil abriga hoje cerca de 35 mil imigrantes africanos, e a comunidade senegalesa está entre as mais presentes, concentrada principalmente nas regiões Sul e Sudeste — em cidades como São Paulo, Porto Alegre e Caxias do Sul.</p>
       <p>No campo do futebol, os Leões de Teranga chegam à Copa do Mundo de 2026 com uma história recente de conquistas: campeões da Copa Africana de Nações em 2021 e a segunda seleção africana a alcançar as quartas de final em uma Copa do Mundo, feito realizado em 2002 ao vencer a então campeã França na fase de grupos.</p>
       <p>Para os senegaleses que vivem no Brasil, cada jogo da seleção durante o Mundial é mais do que uma partida de futebol. É um momento de reunião, de memória e de afirmação de identidade.</p>
     </div>
-
-    <div class="b6final" style="margin-top:2rem">
-      <p>"Mesmo longe de casa, algumas tradições encontram novas formas de permanecer."</p>
-    </div>
+    <div class="b6final"><p>"Mesmo longe de casa, algumas tradições encontram novas formas de permanecer."</p></div>
   </div>
 </section>
 
@@ -582,27 +387,14 @@ footer{background:#111;padding:2rem;text-align:center;color:rgba(255,255,255,.3)
     <div class="div"></div>
     <p>Este site faz parte do projeto de extensão <strong style="color:var(--verde-claro)">"A Copa além do campo: lentes interculturais, memórias e vozes migrantes"</strong>, orientado pela professora <strong style="color:var(--verde-claro)">Fabiana Quintana</strong> da Universidade São Judas Tadeu — unidade Mooca.</p>
     <div class="sgrid">
-      <div>
-        <span class="slabel">Tema central</span>
-        <p>Como imigrantes que vivem no Brasil vivenciam a Copa do Mundo longe de seus países de origem — identidade, memória e pertencimento além das fronteiras.</p>
-      </div>
-      <div>
-        <span class="slabel">Formato</span>
-        <p>Reportagem multimídia desenvolvida como projeto de extensão universitária, integrando texto jornalístico, vídeo, infográficos e narrativa visual.</p>
-      </div>
-      <div>
-        <span class="slabel">Instituição</span>
-        <p>Universidade São Judas Tadeu (USJT) — Campus Mooca, São Paulo.</p>
-      </div>
-      <div>
-        <span class="slabel">Programa Institucional</span>
-        <p>Culturas, Memórias e Diversidades — alinhado ao ODS 10 (Redução das Desigualdades) e à promoção da visibilidade de comunidades migrantes em São Paulo.</p>
-      </div>
+      <div><span class="slabel">Tema central</span><p>Como imigrantes que vivem no Brasil vivenciam a Copa do Mundo longe de seus países de origem — identidade, memória e pertencimento além das fronteiras.</p></div>
+      <div><span class="slabel">Formato</span><p>Reportagem multimídia desenvolvida como projeto de extensão universitária, integrando texto jornalístico, vídeo, infográficos e narrativa visual.</p></div>
+      <div><span class="slabel">Instituição</span><p>Universidade São Judas Tadeu (USJT) — Campus Mooca, São Paulo.</p></div>
+      <div><span class="slabel">Programa Institucional</span><p>Culturas, Memórias e Diversidades — alinhado ao ODS 10 (Redução das Desigualdades) e à promoção da visibilidade de comunidades migrantes em São Paulo.</p></div>
     </div>
   </div>
 </section>
 
 <footer>Copa Além do Campo · Projeto de Extensão USJT · Curso de Jornalismo · 2026</footer>
-
 </body>
 </html>
